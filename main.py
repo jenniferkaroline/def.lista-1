@@ -18,12 +18,19 @@ def chama(valor, lista):
       return "true"
     else:
       return "false"
-fruta = input()
+fruta = input("digite uma fruta e verifique se ela está na lista: ")
 d = chama(fruta, lista)
 print(d)
 
-
+def pega(indice, elemento, lista):
+  lista[indice] = elemento
+  return lista
+indice = int(input("digite a posição para acrescentar o elemento: "))
+elemento = input("digite o elemento: ")
+nl = pega(indice, elemento, lista)
+print(nl)
   
+
     
     
     
